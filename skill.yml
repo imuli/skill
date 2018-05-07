@@ -1,0 +1,29 @@
+- &algebra
+  name: Algebra
+  needs:
+    - *arithmetic
+    - *letters
+- &arithmetic
+  name: Arithmetic
+  description: Operations on real numbers.
+  needs:
+    - *numbers
+  contains:
+    - *addition
+    - *counting
+- &addition
+  name: Addition
+  needs:
+    - *counting
+- &calculus
+  name: Calculus
+  needs: 
+    - *algebra
+- &counting
+  name: Counting
+- &letters
+  name: Letters
+  description: Recognizing Letters
+- &numbers
+  name: Numbers
+  description: Recognizing numerals, and putting together numbers.
