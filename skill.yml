@@ -27,3 +27,30 @@
 - &numbers
   name: Numbers
   description: Recognizing numerals, and putting together numbers.
+- &braid
+  name: Braiding
+- &dutch_braid
+  name: Dutch Braid
+  needs:
+    - *braid
+- &dutch_braid
+  name: Dutch Braid
+  needs:
+    - *braid
+- &french_braid
+  name: French Braid
+  needs:
+    - *braid
+- &fishtail_braid
+  name: Fishtail Braid
+- &hairpinning
+  name: Hair Pinning
+- &milkmaid_braid
+  name: Milkmaid Braid
+  needs:
+    - *braid
+    - *hairpinning
+- &upsidedown_french_braid
+  name: Upsidedown French Braid
+  needs:
+    - *french_braid
